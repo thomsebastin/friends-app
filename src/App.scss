@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.App-header {
+  margin-top: 26px;
+}
+
+.search-form {
+  position: relative;
+  &__icon {
+    position: absolute;
+    right: 6px;
+    top: 18px;
+    cursor: pointer;
+  }
+  #header-search {
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 5px;
+    margin: 0 -5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.friends {
+  margin-top: 15px;
+}
+
+.friend__name {
+  text-align: left;
+  padding: 10px 0px;
+  border-bottom: 1px solid #e3e3e3;
+  position: relative;
+  font-size: 20px;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+  &--description {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  &--favorite {
+    cursor: pointer;
+    position: absolute;
+    right: 60px;
+    top: calc(50% - 10px);
+  }
+  &--delete {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 10px);
+  }
+}
+
+.pagination {
+  &__item {
+    cursor: pointer;
+    display: inline;
+    padding: 10px 14px;
+    background: #b6e3ff;
+    margin: 0 4px;
+    border-radius: 7px;
+    &.active {
+      background: #5fb4ff;
+    }
+  }
+}
+
+.sort-btn {
+  cursor: pointer;
+  background: #d1afff;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
